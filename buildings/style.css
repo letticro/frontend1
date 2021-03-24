@@ -1,0 +1,29 @@
+.offscreen {
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Heebo', sans-serif;
+  background-color: #333448;
+}
+
+body {
+  margin: 0;
+  background: url('./img/banner.jpg') no-repeat center 50px;
+  background-size: 100%;
+  height: 1500px;
+}
+
+/* mindig a htmlt használjuk ha képet akarunk berakni, addig amíg köze van a tartalomhoz!! ha nincs köze a tartalomhoz, akkor CSS-ben itt pl az a háttér a buszban */
+
+/* no repeat: ne legyen ismétlés!! ha repeat, akkor amint vége a képnek akkor ismétli, a repeat akkor jó, ha valami kis mintát akarok egymás mellé rakni */
+
+/* az 50 px azt jelenti, hogy lentebb toltuk 50-el, a background 100% akkor a böngésző szélességéhez igazodik, nem pedig a kép eredeti méretéhez, a body fix 1500-a pedig azért, hogy látszódjon, mert a body mindig annyira széles amennyi tartalom van benne, ez most csak egy ideiglenes dolog hogy látszódjon a munka során lássuk jól */
